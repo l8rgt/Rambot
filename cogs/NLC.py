@@ -10,6 +10,7 @@ class LiveCommand(commands.Cog):
     @commands.command()
     @commands.has_any_role("Admin","Moderators")
     async def live(self, ctx):
+        print(ctx.author.id)
         direc=os.getcwd()
         os.startfile(direc+"\\v2.py")
 

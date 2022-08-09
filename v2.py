@@ -14,10 +14,10 @@ bot = commands.Bot(command_prefix=pref,help_command=None,intents=intent)
 
 @bot.event
 async def on_ready():
-    guild=bot.get_guild(1006170458732900478)#insert server
-    channel = guild.get_channel(1006170459735334957)#insert id here
+    guild=bot.get_guild(413457661988962304)#insert server
+    channel = guild.get_channel(678030513906253863)#insert id here
     await channel.send("Hey @everyone our official twitch FSC_Esports is now live at https://twitch.tv/FSC_esports ! Come support us! Go Rams!")
-    #await channel.send("live")
+    #await channel.send("test")
     sys.exit(0)
 
 bot.run(clientAuth)
