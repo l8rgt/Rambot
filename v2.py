@@ -1,12 +1,9 @@
 #!C:\Users\Matt\AppData\Local\Programs\Python\Python310\python.exe
-import sys
 import discord
 from discord.ext import commands
 import json
 intent = discord.Intents.all()
 
-sys.path.insert(1,"//desktop-serv/d/Program Files (x86)/Rambot")   #This code line is for me only, delete it if you aren't L8R
-sys.path.insert(2,"D:\Program Files (x86)\Rambot")                 #This code line is for me only, delete it if you aren't L8R
 from index import clientAuth                                               # in this directory create an index.py file with the variable "clientAuth"
 
 pref=json.load(open('prefix.json','r'))
