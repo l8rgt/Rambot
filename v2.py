@@ -3,6 +3,7 @@ import discord
 from discord.ext import commands
 import json
 intent = discord.Intents.all()
+import sys
 
 from index import clientAuth                                               # in this directory create an index.py file with the variable "clientAuth"
 
