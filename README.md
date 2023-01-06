@@ -7,11 +7,11 @@ ChannelName = ''                                         #Twitch Channel Name
 DiscordChannelID =                                       #Discord Channel ID
 DiscordServerID =                                        #Discord Server ID
 ```
-Fill in the spaces as required. (inside the '' unless there are no '' present)
-If needed, update prefix in "prefix.json"
+Fill in the spaces as required. (inside the '' unless there are no '' present)  
+If needed, update prefix in "prefix.json"  
 To edit the output message, go to line 62 on "v2.py"
 
-Note: the program calls "v2.py" instead of having the message in the cog in order to make it easier to call the command via a webhook if the user does not want to use the command
+Note: the program calls "v2.py" instead of having the message in the cog in order to make it easier to call the command via a webhook if the user chooses
 
 
 - Discord bot ID location: https://discord.com/developers/applications
