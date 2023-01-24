@@ -1,10 +1,10 @@
-#!C:\Users\Matt\AppData\Local\Programs\Python\Python310\python.exe
 import discord
 from discord.ext import commands
 import json
 intent = discord.Intents.all()
 import sys
 import requests
+import asyncio
 
 from index import clientAuth                                              
 from index import TwitchID
@@ -63,5 +63,9 @@ async def on_ready():
     embedVar.set_thumbnail(url=profilePic)
     await channel.send("Hey @everyone our official twitch "+displayName+" is now live at <https://twitch.tv/"+ChannelName+">! Come support us! Go Rams!",embed=embedVar)  #For a blank message above the embed, replace the first string with ""
     sys.exit(0)
+    
+async def main():
+    async with bot:
+        await bot.run(clientAuth)
 
-bot.run(clientAuth)
+asyncio.run(main())

@@ -14,5 +14,5 @@ class LiveCommand(commands.Cog):
         direc=os.getcwd()
         os.startfile(direc+"\\v2.py")
 
-def setup(bot):
-    bot.add_cog(LiveCommand(bot))
+async def setup(bot):
+    await bot.add_cog(LiveCommand(bot))
